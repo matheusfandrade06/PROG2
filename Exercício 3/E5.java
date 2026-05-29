@@ -1,10 +1,10 @@
-// 5) Crie um programa com a string “Computação” e mostre: o primeiro caractere, o terceiro caractere, o último caractere
+// 5) Crie um programa com a string “Computação” e mostre: o primeiro caractere, o terceiro caractere, o último caractere(linha.length() - 1);
 public class E5 {
     public static void main(String[] args) {
         String linha = "Computação";
         char char0 = linha.charAt(0);
         char char3 = linha.charAt(2);
-        char charf = linha.charAt(9);
+        char charf = linha.charAt(linha.length() - 1);
 
         System.out.printf( "Primeiro Caractere: %c\nTerceiro Caractere: %c\nÚltimo Caractere: %c", char0, char3, charf);
     }
