@@ -5,10 +5,12 @@ public class Cliente {
 
     public Cliente(String nome, String cpf, String telefone) {
         this.nome = nome;
-        this.cpf = cpf;
+        this.cpf = cpf.replaceAll("[^0-9]", "");
         this.telefone = telefone;
     }
-
+    public void exibirDetalhes() {
+        System.out.println("Nome: " + nome + " | CPF: " + cpf + " | Telefone: " + telefone);
+    }
     // Getters e Setters
     public String getNome() { return nome; }
     public void setNome(String nome) { this.nome = nome; }

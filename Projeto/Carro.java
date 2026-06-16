@@ -8,10 +8,10 @@ public class Carro extends Veiculo {
         this.temArCondicionado = temArCondicionado;
     }
 
-    @Override
+    @Override // uso do Polimorfismo. O método 'exibirDetalhes' muda conforme a classe(neste caso, Carro altera a informação exibida, explicitando se há a presença de ar-condicionado e o número de portas)
     public void exibirDetalhes() {
         super.exibirDetalhes();
-        System.out.println("   -> [CARRO] Portas: " + numPortas + " | Ar-Condicionado: " + (temArCondicionado ? "Sim" : "Não"));
+        System.out.println("   -> [CARRO] Portas: " + numPortas + " | Ar-Condicionado: " + (temArCondicionado ? "Sim" : "Não")+" Possui");
     }
 
     // Getters e Setters
